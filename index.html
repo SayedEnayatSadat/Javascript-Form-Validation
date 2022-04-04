@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Anmelden Formular</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="javascript.js" defer></script>
+        <script src="https://kit.fontawesome.com/279f38fde0.js"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>Kontakt Formular</h2>
+            </div>
+            <form id="form" novalidate>
+                <div class="form-control">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Ihre Vollname" id="username"
+                        />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label>E-Mail:</label>
+                    <input type="email" placeholder="Ihre Vollständigen E-Mail"
+                        id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label>Telefonnummer:</label>
+                    <input type="number" placeholder="Ihre Telefonnummer"
+                        id="number" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label>Geschlecht:</label>
+                    <div id="gender">
+                        <label><input type="radio" name="gender" id="rd1"
+                                value="male"> <span>Mänlich</span> </label>
+                        <label><input type="radio" name="gender"
+                                id='rd2'value="female"><span>Weiblich</span></label>
+                    </div>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label>Password:</label>
+                    <input type="password" placeholder="Ihre Password"
+                        id="password" />
+                    <icon id='eye'class="fa-solid fa-eye-slash"></icon>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label>Password Bestätigen:</label>
+                    <input type="password" placeholder="Bestätigen Sie Ihre
+                        Password" id="password2" />
+                    <icon id='eye' class="fa-solid fa-eye-slash"></icon>
+                    <small>Error message</small>
+                </div>
+                <button id="btnAdd">Anmelden</button>
+            </form>
+        </div>
+    </body>
+</html>
